@@ -16,7 +16,7 @@ public class HeroCreator {
 		while (!notRepeat) {
 			switch (heroSelection) {
 			case 1:	hero = archie;
-					Game.Dungeon(hero);
+					Town.town(hero);
 					break;
 			default: System.out.println("Invalid option!");
 					notRepeat = true;
