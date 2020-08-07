@@ -1,6 +1,6 @@
 package textRPG;
 
-public class Monsters extends AttackEntity {
+public class Monsters {
 	String name;
 	int level;
 	int damageDealt;
