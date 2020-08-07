@@ -63,13 +63,16 @@ public class Game {
 								System.out.println("# You defeated " + enemy + "! #");
 								enter.nextLine();
 								System.out.println("# " + enemy + " has dropped " + dropExperience + " exp. points! #");
+								enter.nextLine();
 								break;
 							}
 							heroHP -= enemyDamageDealt;
 							System.out.println("# " + enemy + " dealt " + enemyDamageDealt + " HP to you! #");
+							break;
 					case 2: System.out.println("This function has not been added yet!");
 							break;
 					case 3: System.out.println("You succesfully ran away!");
+							enter.nextLine();
 							Game.Dungeon(hero);
 							break;
 				}
