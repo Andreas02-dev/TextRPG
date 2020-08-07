@@ -1,5 +1,4 @@
 package textRPG;
-import java.util.Random;
 
 public class Zombie extends Monsters {
 	String name;
