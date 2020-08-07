@@ -59,6 +59,19 @@ public class Game {
 							heroHP -= enemyDamageDealt;
 							System.out.println("# You dealt " + heroDamageDealt + " HP to " + enemy + "! #");
 							enter.nextLine();
+							if (enemyHP <= 0) {
+								int dropExperience;
+								switch (enemyLevel) {
+									case 1: dropExperience = 5;
+											break;
+									case 2: dropExperience = 10;
+											break;
+								
+									}
+								System.out.println("# You defeated " + enemy + "! #");
+								enter.nextLine();
+								System.out.println("# " + enemy + " has dropped " + dropExperience + " exp. points! #");
+							}
 							System.out.println("# " + enemy + " dealt " + enemyDamageDealt + " HP to you! #");
 				}
 			}
