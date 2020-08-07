@@ -1,6 +1,6 @@
 package textRPG;
 
-public class Heroes extends AttackEntity{
+public class Heroes {
 	String name;
 	int level;
 	int damageDealt;
