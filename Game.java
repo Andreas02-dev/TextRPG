@@ -50,29 +50,28 @@ public class Game {
 				System.out.println("What would you like to do?");
 				System.out.println("----------------------------------------------");
 				System.out.println("(1) Attack");
-				System.out.println("(2) Heal");
+				System.out.println("(2) Heal !NOT IMPLEMENTED YET!");
 				System.out.println("(3) Run!");
 				int choice = keyboard.nextInt();
 				
 				switch (choice) {
 					case 1: enemyHP -= heroDamageDealt;
-							heroHP -= enemyDamageDealt;
 							System.out.println("# You dealt " + heroDamageDealt + " HP to " + enemy + "! #");
 							enter.nextLine();
 							if (enemyHP <= 0) {
-								int dropExperience;
-								switch (enemyLevel) {
-									case 1: dropExperience = 5;
-											break;
-									case 2: dropExperience = 10;
-											break;
-								
-									}
+								int dropExperience = enemyLevel * 5;
 								System.out.println("# You defeated " + enemy + "! #");
 								enter.nextLine();
 								System.out.println("# " + enemy + " has dropped " + dropExperience + " exp. points! #");
+								break;
 							}
+							heroHP -= enemyDamageDealt;
 							System.out.println("# " + enemy + " dealt " + enemyDamageDealt + " HP to you! #");
+					case 2: System.out.println("This function has not been added yet!");
+							break;
+					case 3: System.out.println("You succesfully ran away!");
+							Game.Dungeon(hero);
+							break;
 				}
 			}
 		}
