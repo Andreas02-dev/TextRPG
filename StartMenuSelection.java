@@ -17,6 +17,7 @@ public class StartMenuSelection {
 					repeat = false;
 					break;
 			case 2: 
+					System.out.println("Goodbye!");
 					repeat = false;
 					break;
 			default: System.out.println("Invalid selection.");
