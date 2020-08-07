@@ -13,7 +13,7 @@ public class StartMenuSelection {
 			int startMenuSelect = keyboard.nextInt();
 			
 			switch (startMenuSelect) {
-			case 1: 
+			case 1: HeroCreator.heroCreator();
 					repeat = false;
 					break;
 			case 2: 
