@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class HeroCreator {
 	static Scanner keyboard = new Scanner(System.in);
-	static Heroes archie = new Archer("Archie", 1, 5, 20);
+	static Heroes archie = new Archer("Archie", 1, 5, 20, 0);
 	
 	//system variable
 	static Heroes hero;
