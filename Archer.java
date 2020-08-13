@@ -1,19 +1,8 @@
 package textRPG;
 
 public class Archer extends Heroes {
-	String name;
-	int level;
-	int damageDealt;
-	int hitPoints;
-	int walletAmount;
-	int healthPotionAmount;
-	public Archer(String name, int level, int damageDealt, int hitPoints, int walletAmount, int healthPotionAmount) {
-		super("Archer", 1, 10, 100, 0, 0);
-		this.name = name;
-		this.level = level;
-		this.damageDealt = damageDealt;
-		this.hitPoints = hitPoints;
-		this.walletAmount = walletAmount;
-		this.healthPotionAmount = healthPotionAmount;
+
+	public Archer(String name, int level, int experience, int baseDamage, int damagePerLevel, String weapon, int weaponAmplifier, int damage, int baseHitpoints, int hitPointsPerLevel, int hitpoints, int maximumHitPoints, String armor, int armorAmplifier, int wallet, int healthPotionAmount) {
+		super("Archer", 1, 541, 6, 4, "Regular bow", 1, 10, 98, 2, 100, 100, "Naked", 1, 0, 0);
 	}
 }
